@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+html , body {
+    direction: rtl;
+    margin: 0px;
+    padding: 0px;
+    scrollbar-width: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+                        /* fonts  */
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: iransans;
+    src: url(../fonts/IRANSans-Edit.ttf);
+}
+
+@font-face {
+    font-family: persianFont;
+    src: url(../fonts/NotoSansArabic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: face;
+    src: url(../fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+}
