@@ -163,7 +163,7 @@ body .wellcome-screen .your-assistante{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 20px;
   }
 
    header .navigation-bar .aidoo-img img{
