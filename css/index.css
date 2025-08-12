@@ -4,7 +4,7 @@
                                    /* start to make wellcome-screen styles */
 body{
     position: relative;
-    background-color: aliceblue;
+    background-color: rgb(243, 247, 253);
 }
 
 body .wellcome-screen{
@@ -23,7 +23,7 @@ body .wellcome-screen{
 
     padding-top: 150px;
     z-index: 9000;
-    animation: screenGone .6s ease forwards;
+    animation: screenGone 1s ease forwards ;
     animation-delay: 3.9s;
 }
 
@@ -44,6 +44,10 @@ body .wellcome-screen .your-assistante{
     animation: rightToLeft 1s ease-out forwards;
     animation-delay: 1.4s;
 }
+
+                                  
+                                                
+                                          /* start to make hidden navigation */
 
 .hidden-navigation{
     position: fixed;
@@ -132,7 +136,7 @@ body .wellcome-screen .your-assistante{
 
 
 
-                        /* start to make header styles */
+                                /* start to make header styles */
 
  header .navigation-bar{
     display: flex;
@@ -140,22 +144,52 @@ body .wellcome-screen .your-assistante{
     align-items: center;
  }
 
+ header .navigation-bar .right-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+  header .navigation-bar .right-nav .login-button{
+    background-color: #1976e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    border-radius: 10px;
+    padding: 7px 10px;
+    margin-right: 5px;
+  }
+
+  header .navigation-bar .right-nav .login-button i{
+    font-size: 1.7rem;
+    color: #ffffff;
+  }
+
+  header .navigation-bar .right-nav .login-button span{
+    font-family: iransans;
+    font-size: 1rem;
+    padding-right: 5px;
+    color: white;
+
+  }
+
  header .navigation-bar .navigation{
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 50px;
  }
  
  header .navigation-bar .navigation i{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     margin: 15px 10px;
     height: 30px;
     width: 30px;
     color: rgb(89, 89, 90);
-    border: 3px solid #56CCF2;
+    border: 3px solid #1976e8;
     border-radius: 5px;
  }
 
@@ -176,7 +210,6 @@ body .wellcome-screen .your-assistante{
     font-weight: bold;
     font-size: 1.5rem;
     color: #1e5aa8;
-
    }
 
    header .aidoo-introduction{
@@ -234,10 +267,10 @@ body .wellcome-screen .your-assistante{
     flex-direction: column;
     justify-content: column;
     width: 90vw;
-    height: 370px;
+    height: 340px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
    }
 
    main .servise-list .cards .img-card{
@@ -246,7 +279,7 @@ body .wellcome-screen .your-assistante{
    }
 
    main .servise-list .cards .img-card img{
-    width: 70vw ;
+    width: 50vw ;
     padding: 30px;
    }
 
@@ -257,95 +290,239 @@ body .wellcome-screen .your-assistante{
    }
 
    main .servise-list .cards .information-card h1{
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: iransans;
    }
 
    main .servise-list .cards .information-card span{
-    margin-bottom: 2px;
     font-family: iransans;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
     color: #3a3a3a;
    }
 
-   /* main .how-to-regester{
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 40px solid white;
-    font-family: iransans;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: rgb(99, 99, 99);
-
-   }
-
-    main .how-to-regester .titel-regester h1{
-      text-align: center;
-    }
-
-    main .how-to-regester .regester-flash{
-      
-    } */
-
-   /* main .login-free-advise{
+   main .advise-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
+    background-color: #ffffff;
+    height: 550px;
    }
 
-   main .login-free-advise .login{
+   main .advise-container .advise-titel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: iransans;
+    margin-bottom: 30px;
+   }
+
+   main .advise-container .advise-titel h1{
+    font-size: 2.5rem;
+    margin: 10px 0px;
+   }
+
+   main .advise-container .advise-titel h1 span{
+    color: #0073ff;
+   }
+
+   main .advise-container .advise-titel > span{
+    font-size: 1.2rem;
+    color: #5d5d5d;
+   }
+
+   main .advise-container .advise-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   }
+
+   main .advise-container .advise-box .name-input{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 20px;
+   }
+
+   main .advise-container .advise-box .name-input input{
+    font-family: iransans;
+    border: 1px solid #b2b2b2;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+   }
+
+   main .advise-container .advise-box .name-input input:hover{
+    border: 2px solid #0073ff;
+
+   }
+
+   main .advise-container .advise-box .name-input .name-error{
+    opacity: 0;
+    font-family: iransans;
+    font-size: 1rem;
+    color: red;
+    padding:1px 3px 2px 0px;
+   }
+
+   main .advise-container .advise-box .number-input{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+   }
+
+
+    main .advise-container .advise-box .number-input input{
+      font-family: iransans;
+      border: 1px solid #b2b2b2;
+      border-radius: 10px;
+      padding: 15px;
+      outline: none;
+   }
+
+   main .advise-container .advise-box .number-input input:hover{
+    border: 2px solid #0073ff;
+   }
+
+   main .advise-container .advise-box .number-input .number-error{
+    opacity: 0;
+    font-family: iransans;
+    color: red;
+    padding:3px ;
+
+   }
+
+  main .advise-container .advise-button{
     display: flex;
     justify-content: center;
+    margin: 30px 0px 10px 0px;
    }
 
-   main .login-free-advise .login span{
-    text-align: center;
-    width: 90vw;
-    border: 1px solid #41cdfb;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    padding: 10px;
-    color: aliceblue;
+   main .advise-container .advise-button button{
     font-family: iransans;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background: #56CCF2; 
-    background: -webkit-linear-gradient(to top , #2F80ED, #56CCF2); 
-    background: linear-gradient(to bottom , #2F80ED, #56CCF2);
+    font-size: 1.3rem;
+    width: 92vw;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 25px ;
+    background-color: #0073ff; 
    }
 
-   main .login-free-advise .free-advise{
+
+   main .container-frequently-question{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 90%;
-    height: 150px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    padding-bottom: 30px;
+   }
+
+    main .container-frequently-question .frequently-titel{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: iransans;
+      margin: 0px 0px 30px 0px;
+   }
+
+   main .container-frequently-question .frequently-titel h1{
+    font-size: 3rem;
+    margin: 15px 0px;
+   }
+
+   main .container-frequently-question .frequently-titel span{
+    font-size: 1.5rem;
+    color: #4f4f4f;
+
+   }
+
+   main .container-frequently-question .frequently-titel span span{
+    color: #0073ff;
+   }
+
+   main .container-frequently-question .all-questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+   }
+
+   main .container-frequently-question .all-questions .question-and-answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 18px 5px 18px 10px ;
+    width: 94vw;
+    border-bottom: 1px solid rgb(214, 214, 214);
+   }
+
+   main .container-frequently-question .all-questions #last-question-and-answer{
+    border-bottom: none ;
+    padding-bottom: 100px;
+   }
+
+   main .container-frequently-question .all-questions .question-and-answer .question-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   }
+
+   main .container-frequently-question .all-questions .question-and-answer .question-icon span{
     font-family: iransans;
+    font-size: 1.6rem;
+  }
+
+   main .container-frequently-question .all-questions .question-and-answer .question-icon i{
+    font-size: 1.5rem;
+    transition: transform .2s ease;
+    color: #b2b2b2;
    }
 
-   main .login-free-advise .free-advise h1{
-    
-
+   main .container-frequently-question .all-questions .question-and-answer .answer{
+    display: none;
    }
 
-   main .login-free-advise .free-advise span{
+   main .container-frequently-question .all-questions .question-and-answer .answer p{
+    padding: 5px 15px;
+    line-height: 1.9;
+   }
 
-   } */
-   
+   .show-answer{
+    display: block !important;
+    font-family: iransans;
+    font-size: 1.2rem;
+    color: #3b3b3b;
+    width: 94vw;
+   }
+
+   .icon-rotation{
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+   }
+
 
                         /* start to make footer styles */
 
    footer{
-    background: #41cdfb; 
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to left, #1e2c3b, #141E30);
+
+
     color: aliceblue;
     border-top-right-radius:10px ;
     border-top-left-radius:10px ;
-    margin-top: 100px;
+    /* margin-top: 100px; */
    }
 
    footer .aidoo-logo{
@@ -358,7 +535,6 @@ body .wellcome-screen .your-assistante{
 
    footer .aidoo-logo img{
     width: 20vw;
-
    }
 
    footer .aidoo-logo span{
@@ -377,19 +553,19 @@ body .wellcome-screen .your-assistante{
    footer .footer-access .access-link{
     display: flex;
     flex-direction: column;
-
    }
 
    footer .footer-access h2{
     font-family: iransans;
     font-size: 2rem;
-    color: rgb(255, 255, 255);   
+    color: rgb(255, 255, 255);  
+    margin-bottom: 30px; 
    }
 
    footer .footer-access .access-link a{
-    color: aliceblue;
+    color: #d6d6d6;
     font-family: iransans;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
     font-weight: bold;
    }
@@ -409,6 +585,7 @@ body .wellcome-screen .your-assistante{
    footer .call-us .call-icons{
     display: flex;
     flex-direction: column;
+    color: #b3b3b3;
    }
 
      footer .call-us .call-icons > div{
@@ -419,6 +596,7 @@ body .wellcome-screen .your-assistante{
     font-family: iransans ;
     font-size: 1.5rem;
     margin-bottom: 20px;
+    color: #d6d6d6;
    }
 
    .fa-envelope{
@@ -429,6 +607,7 @@ body .wellcome-screen .your-assistante{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: iransans ;
     margin-bottom: 30px;
    }
@@ -436,8 +615,8 @@ body .wellcome-screen .your-assistante{
    footer .follow-us h2{
     font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 40px;
-    margin-right: 30px;
+    /* margin-bottom: 40px;
+    margin-right: 30px; */
    }
 
     footer .follow-us .images{
@@ -461,7 +640,7 @@ body .wellcome-screen .your-assistante{
     width: 100vw;
     height: 50px;
     background-color: aliceblue;
-    color: #41cdfb ;
+    color: #0073ff ;
     font-family: iransans;
     font-size: 1.4rem;
     font-weight: bold;

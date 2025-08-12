@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-              <!-- welcome screen for user , when user clicks the button welcome screen disappears  -->
 
-     <div class="wellcome-screen">
+     <!-- <div class="wellcome-screen">
         <h1 class="aidoo">Aidoo</h1>
         <p class="your-assistante">  دستیاری هوشمند برای کسب و کار شما </p>
-    </div> 
+    </div>  -->
 
             <div class="hidden-navigation">
 
@@ -46,18 +45,28 @@
 
         <nav class="navigation-bar">
 
-            <div class="navigation">
+            <div class="right-nav"> 
 
-                 <i class="fa-solid fa-bars"></i>
+                <div class="navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="login-button">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <span>ثبت نام | ورود</span>
+                </div>
 
             </div>
 
-            <div class="aidoo-img"> 
+            <div class="left-nav">
 
-                <img src="./images/آیدو-removebg-preview.png" alt=""> 
-                <span> Aidoo </span>
+                <div class="aidoo-img"> 
+                    <img src="./images/آیدو-removebg-preview.png" alt=""> 
+                    <span> Aidoo </span>
+                </div>
 
             </div>
+
         </nav>
 
         <div class="aidoo-introduction">
@@ -108,7 +117,7 @@
 
                  <div class="cards">
                     <div class="img-card">
-                        <img src="./images/undraw_professor_xcrw.svg" alt="">
+                        <img src="./images/undraw_buffer_dsav.svg" alt="">
                     </div>
                     
                     <div class="information-card"> 
@@ -126,7 +135,7 @@
 
                  <div class="cards">
                     <div class="img-card">
-                        <img id="img-smart-live" src="./images/undraw_real-time-collaboration_g4mc.svg" alt="">
+                        <img src="./images/undraw_real-time-collaboration_g4mc.svg" alt="">
                     </div>
                     
                     <div class="information-card"> 
@@ -144,7 +153,7 @@
 
                  <div class="cards">
                     <div class="img-card">
-                        <img id="img-smart-message" src="./images/undraw_message-sent_785q.svg" alt="">
+                        <img src="./images/undraw_message-sent_785q.svg" alt="">
                     </div>
                     
                     <div class="information-card"> 
@@ -164,29 +173,114 @@
 
         </section>
 
-        <!-- <section class="how-to-regester">
+        <section class="advise-container">
 
-            <div class="titel-regester">
-                <h1> استفاده از ابزار های آیدو فقط در 3 مرحله</h1>
-            </div> -->
-            <!-- <div class="transfer-flash"> <img src="./images/works-arrow2.png" alt=""> </div> -->
-            <!-- <div class="step-one">
-                <div class="icon-one"> <i class="fa-solid fa-1"></i> </div>
-                <h1> مرحله اول  </h1>
-                <span> ثبت نام در پنل آیدو </span>
-            </div> -->
+            <div class="advise-titel">
+                <h1> فرم <span>درخواست</span> مشاوره </h1>
+                <span> اطلاعات خود را وارد کنید تا در اسرع وقت با شما تماس بکیریم </span>
+            </div>
+
+            <div class="advise-box">
+
+                <div class="name-input">
+                    <input type="text" placeholder=" نام و نام خانوادگی خود را وارد کنید ">
+                    <span class="name-error"> نام نمیتواند با عدد شروع شود </span>
+                </div>
+
+                <div class="number-input">
+                    <input type="text" inputmode="numeric" maxlength="11"  placeholder="شماره موبایل خود را وارد کنید ">
+                    <span class="number-error">شماره موبایل معتبر وارد کنید</span>
+                </div>
+
+            </div>
+
+            <div class="advise-button">
+                <button> ارسال درخواست </button>
+            </div>
 
         </section>
 
-        <!-- <section class="login-free-advise">
-            <div class="login"> <span> همین حالا ثبت نام کنید </span> </div>
-            <div class="free-advise"> 
-                <h1>برای خرید به مشاوره نیاز دارید؟</h1>
-                <span> پشتیبانی 24 ساعته رایگان  </span>
-            </div> -->
-        
+        <div class="all">
+            <section class="container-frequently-question">
+
+            <div class="frequently-titel">
+                <h1>سوالات متداول </h1>
+                <span>سوالات پرتکراری که کاربران در باره <span>آیدو</span> میپرسند </span>
+            </div>
+
+            <div class="all-questions">
+
+                <div class="question-and-answer">
+
+                    <div class="question-icon">
+                        <span> آیدو چگونه به کسب و کار من کمک میکند؟  </span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="answer">
+                         <p>آیدو یک فروشنده هوشمند مبتنی بر هوش مصنوعی است که ۲۴ ساعته به سوالات مشتریان شما پاسخ می‌دهد، آن‌ها را راهنمایی می‌کند و فرآیند مشاوره و ثبت سفارش را مدیریت می‌کند. فرقی نمی‌کند شما محصولات فیزیکی بفروشید یا خدمات ارائه دهید، آیدو اطلاعات لازم را در اختیار مشتری قرار داده و آن‌ها را تا مرحله خرید همراهی می‌کند. شما با آیدو میتوانید با بهبود و تسریع فرآیند خریدتان، فروش خود را افزایش دهید</p>
+                    </div>
+
+                </div>
+
+                <div class="question-and-answer">
+
+                    <div class="question-icon">
+                        <span>آیا برای استفاده از آیدو نیاز به دانش فنی دارم؟</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="answer">
+                         <p> خیر، آیدو با رابط کاربری ساده و کاربرپسند طراحی شده است و نیاز به هیچگونه دانش فنی در استفاده از آن ندارید. </p>
+                    </div> 
+
+                </div>
+
+                <div class="question-and-answer">
+
+                    <div class="question-icon">
+                        <span> آیدو چه سوالاتی را پاسخ میدهد؟</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="answer">
+                         <p> آیدو تمام سوالات مرتبط با محصولات، خدمات، قیمت‌گذاری، شرایط خرید و هر چیزی که در تصمیم‌گیری مشتری تأثیرگذار باشد را پاسخ می‌دهد. از جزئیات فنی گرفته تا مقایسه محصولات، موجودی و روش‌های پرداخت، همه را می‌توانید به آیدو بسپارید. حتی اگر سوالات تخصصی مطرح شود، آیدو به کمک هوش مصنوعی پیشرفته خود پاسخ‌های دقیقی ارائه می‌دهد</p>
+                    </div>
+
+                </div>
+
+                <div class="question-and-answer">
+
+                    <div class="question-icon">
+                        <span> هزینه استفاده از آیدو چقدر است؟ </span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="answer">
+                         <p>هزینه آیدو بسته به نیاز کسب‌وکار شما متفاوت است. برای دریافت اطلاعات بیشتر درباره قیمت‌ها، لطفاً با ما تماس بگیرید یا شماره خود را بگذارید تا تیم ما با شما ارتباط بگیرد</p>
+                    </div>
+
+                </div>
+
+                <div id="last-question-and-answer" class="question-and-answer">
+
+                    <div class="question-icon">
+                        <span>آیدو تا چه حد برای کسب و کار من موثر است؟ </span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="answer">
+                         <p> آیدو یک دستیار هوشمند و پیشرفته است که برای کمک به رشد و موفقیت کسب‌وکار شما طراحی شده.آیدو به عنوان دستیار هوشمند فروش، با ارائه پشتیبانی شبانه‌روزی به مشتریان شما، پاسخ‌دهی سریع به سوالات، اطلاع‌رسانی از جدیدترین محصولات و ساده‌تر کردن روند خرید، باعث افزایش رضایت مشتریان و رشد چشمگیر فروش شما شده و با استفاده از آن، شما می‌توانید بدون نگرانی از جزئیات و پشتیبانی روزانه، وقت و انرژی بیشتری برای توسعه و گسترش کسب‌وکار خود داشته باشید. </p>
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
+
+        </div>
+
 
     </main>
     
@@ -199,7 +293,7 @@
         
         <div class="footer-access">
 
-            <h2> دسترسی ها:</h2>
+            <h2> دسترسی ها</h2>
 
             <div class="access-link">
             <a href=""> امکانات </a>
@@ -212,7 +306,7 @@
         </div>
 
         <div class="call-us">
-            <h2>اطلاعات تماس:</h2>
+            <h2>اطلاعات تماس</h2>
             <div class="call-icons">
                 <div class="aidoo-location"><i class="fa-solid fa-location-dot"> </i> <span> تهران دانشگاه شریف مرکز نو اوریه شریف </span></div>
                 <div class="aidoo-number"> <i class="fa-solid fa-phone-volume"></i> <span> شماره تماس: 021-334-53-56</span></div>
@@ -221,7 +315,7 @@
         </div>
 
         <div class="follow-us">
-            <h2>مارا در شبکه های اجتماعی دنبال کنید:</h2>
+            <h2>مارا در شبکه های اجتماعی دنبال کنید</h2>
 
             <div class="images">
                 <i class="fa-brands fa-telegram"></i>
