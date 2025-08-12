@@ -607,16 +607,22 @@ body .wellcome-screen .your-assistante{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-family: iransans ;
+    margin: 60px 0px 30px 0px;
+   }
+
+   footer .follow-us .follow-titel{
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
    }
 
-   footer .follow-us h2{
+   footer .follow-us .follow-titel h2{
+    text-align: center;
     font-size: 1.6rem;
-    font-weight: bold;
-    /* margin-bottom: 40px;
-    margin-right: 30px; */
+    border-bottom: 1px solid rgb(63, 63, 63);
+    width: 80vw;
+    padding-bottom: 10px;
    }
 
     footer .follow-us .images{
@@ -630,7 +636,7 @@ body .wellcome-screen .your-assistante{
    }
 
    .fa-youtube{
-    margin-left: 20px;
+    /* margin-left: 20px; */
    }
 
    footer .down-footer{
