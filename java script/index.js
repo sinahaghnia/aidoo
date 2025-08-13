@@ -40,14 +40,13 @@ questionAndAnswer.forEach( question =>{
 
     question.addEventListener('click' , ()=>{
 
-        questionAndAnswer.forEach( q =>{
-        const otherQuestion = q.querySelector('.answer');
+    //     questionAndAnswer.forEach( q =>{
+    //     const otherQuestion = q.querySelector('.answer');
 
-        if( otherQuestion !== answer){
-            otherQuestion.classList.remove('show-answer');
-        };
-    })
-
+    //     if( otherQuestion !== answer){
+    //         otherQuestion.classList.remove('show-answer');
+    //     };
+    // })
         answer.classList.toggle('show-answer');
         questionIcon.classList.toggle('icon-rotation');
     

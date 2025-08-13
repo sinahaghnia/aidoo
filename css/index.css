@@ -251,15 +251,20 @@ body .wellcome-screen .your-assistante{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
    }
 
    main .servise-list .h1{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: iransans;
     font-size: 1.3rem;
-    padding: 20px;
+    margin: 25px 0px 40px 0px ;
+   }
+
+   main .servise-list .servise-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    }
 
    main .servise-list .cards{
@@ -271,6 +276,14 @@ body .wellcome-screen .your-assistante{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-bottom: 40px;
+    transition:box-shadow .5s ease , width .5s ease ;
+   }
+
+   main .servise-list .cards:hover{
+    width: 94vw;
+    height: 350px;
+    box-shadow: 0px 0px 40px 0px rgba(168, 207, 241, 0.497);
+    transition:box-shadow .5s ease , width .5s ease ;
    }
 
    main .servise-list .cards .img-card{
@@ -484,12 +497,19 @@ body .wellcome-screen .your-assistante{
 
    main .container-frequently-question .all-questions .question-and-answer .question-icon i{
     font-size: 1.5rem;
-    transition: transform .2s ease;
     color: #b2b2b2;
+    transition: transform .4s ease;
    }
 
    main .container-frequently-question .all-questions .question-and-answer .answer{
-    display: none;
+    opacity: 0;
+    max-height: 0px;
+    font-family: iransans;
+    font-size: 1.2rem;
+    color: #3b3b3b;
+    width: 94vw;
+    overflow: hidden;
+    transition: opacity .8s ease , max-height .8s ease;
    }
 
    main .container-frequently-question .all-questions .question-and-answer .answer p{
@@ -497,17 +517,15 @@ body .wellcome-screen .your-assistante{
     line-height: 1.9;
    }
 
-   .show-answer{
-    display: block !important;
-    font-family: iransans;
-    font-size: 1.2rem;
-    color: #3b3b3b;
-    width: 94vw;
-   }
+  main .container-frequently-question .all-questions .question-and-answer .answer.show-answer{
+    opacity: 1;
+    max-height: 200px;
+    transition: opacity .8s ease , max-height .8s ease;
+  }
 
    .icon-rotation{
     transform: rotate(180deg);
-    transition: transform .2s ease;
+    transition: transform .4s ease;
    }
 
 
@@ -522,7 +540,6 @@ body .wellcome-screen .your-assistante{
     color: aliceblue;
     border-top-right-radius:10px ;
     border-top-left-radius:10px ;
-    /* margin-top: 100px; */
    }
 
    footer .aidoo-logo{
